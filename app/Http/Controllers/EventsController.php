@@ -10,4 +10,9 @@ class EventsController extends Controller
     {
         dd($id);
     }
+
+    public function category ($category, $subcategory)
+    {
+        dd("Category: {$category} SubCategory: {$subcategory}");
+    }
 }
