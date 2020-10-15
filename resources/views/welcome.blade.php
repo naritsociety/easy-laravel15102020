@@ -14,7 +14,6 @@
     </head>
     <body>
         <div class="container">
-            <h3>Easy Laravel</h3>
             <div id="root"></div>
         </div>
         <script src="{{ asset('js/app.js')}}"></script>
