@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ConditionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +28,5 @@ Route::get('events/{id}',
 Route::get('events/category/{category}/{subcategory?}',
     [App\Http\Controllers\EventsController::class, 'category'])
     ->name('events.category');
+
+Route::resource('condition', ConditionController::class);
