@@ -6,8 +6,11 @@ use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
-    function index ()
+    public function index ()
     {
-        return view('welcome.index');
-    }    
+        $name = 'Narit Charoenval';
+        $date = date('Y-m-d');
+
+        return view('welcome.index', compact('name', 'date'));
+    }
 }
