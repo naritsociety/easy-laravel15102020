@@ -15,7 +15,7 @@
     <body>
         <div class="container">
             <p>
-                {{ $name }} has the event ID {{ $id }}.
+                ID: {{ $id }} name: {{ $name }} has the event on {{ $date }}.
             </p>
         </div>
         <script src="{{ asset('js/app.js')}}"></script>
