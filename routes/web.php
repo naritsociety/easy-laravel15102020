@@ -19,10 +19,12 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('events', [App\Http\Controllers\EventsController::class, 'index']);
+
 Route::get('events/{id}',
     [App\Http\Controllers\EventsController::class, 'show'])
     ->name('events.show');
-    
+
 Route::get('events/category/{category}/{subcategory?}',
     [App\Http\Controllers\EventsController::class, 'category'])
     ->name('events.category');

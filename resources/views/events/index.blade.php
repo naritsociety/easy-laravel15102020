@@ -14,9 +14,11 @@
     </head>
     <body>
         <div class="container">
-            <p>
-                {{ID: {{ $id }} name: {{ $name }} has the event on {{ $date }}.}}
-            </p>
+            <ul>
+                @foreach ($events as $event)
+                    <li>{{ $event }}</li>
+                @endforeach
+            </ul>
         </div>
         <script src="{{ asset('js/app.js')}}"></script>
     </body>
