@@ -12,7 +12,13 @@ class EventsController extends Controller
         return view('events.show')
             ->with('id', $id)
             ->with('name', 'Laravel Hacking and Coffee');
-        */        
+        */
+        $data = [
+            'name' => 'Calos Santana',
+            'date' => date('Y-m-d'),
+            'id' => $id
+        ];
+        return view('events.show')->with($data);
     }
 
     public function category ($category, $subcategory)
