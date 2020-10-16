@@ -22,6 +22,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('events/{id}',
     [App\Http\Controllers\EventsController::class, 'show'])
     ->name('events.show');
+    
 Route::get('events/category/{category}/{subcategory?}',
     [App\Http\Controllers\EventsController::class, 'category'])
     ->name('events.category');
