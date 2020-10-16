@@ -6,6 +6,17 @@ use Illuminate\Http\Request;
 
 class EventsController extends Controller
 {
+    public function index ()
+    {
+        $events = [
+            'Laravel Hacking and Coffee',
+            'Iot with Raspbery Pi',
+            'Free Vue.js Lessons'
+        ];
+        return view('events.index')
+            ->with('events', $events);
+    }
+
     public function show ($id)
     {
         /*
