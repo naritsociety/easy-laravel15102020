@@ -2,4 +2,6 @@
 
 ### Multiple value
 
-page 54
+composer require laravelcollective/html
+
+page 63
