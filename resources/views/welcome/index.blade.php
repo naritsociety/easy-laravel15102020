@@ -15,6 +15,9 @@
     <body>
         <div class="container">
             <div id="root"></div>
+            <p>
+                <a href="{{ route('events.show', ['id' => 42]) }}">Events 42</a>
+            </p>
         </div>
         <script src="{{ asset('js/app.js')}}"></script>
     </body>
